@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mendandani Halaman Web dengan CSS</title>
+  <style>
+    /* Desain cantik tema ungu */
+    header {
+      background: linear-gradient(90deg, #ab75b6 0%, #e2bfe2 100%);
+      color: #fff;
+      border-radius: 18px 18px 0 0;
+      box-shadow: 0 4px 16px #ab75b644;
+      padding: 24px 32px 16px 32px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 2.2em;
+      color: #fff;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 8px #e2bfe2;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #e2bfe2;
+      font-size: 1.1em;
+      margin: 0 0 8px 0;
+    }
+    nav ul {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      padding: 0;
+      margin: 12px 0 0 0;
+      list-style: none;
+    }
+    nav ul li a {
+      background: #ab75b6;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 8px #ab75b644;
+    }
+    nav ul li a:hover {
+      background: #e2bfe2;
+      color: #ab75b6;
+    }
+    nav a {
+      color: #ab75b6;
+      font-weight: bold;
+      margin-left: 16px;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a[href="login.html"] {
+      position: absolute;
+      top: 16px;
+      right: 32px;
+      background: #ab75b6;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #ab75b644;
+      margin-left: 0;
+    }
+    nav a[href="login.html"]:hover {
+      background: #e2bfe2;
+      color: #ab75b6;
+    }
+    .artikel {
+      background: #fff6fb;
+      border-radius: 0 0 18px 18px;
+      box-shadow: 0 4px 16px #ab75b644;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    article {
+      background: #e2bfe2;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px #ab75b644;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      color: #6d1f85;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    article h2 {
+      color: #ab75b6;
+      font-size: 1.4em;
+      margin-bottom: 8px;
+    }
+    .info {
+      font-size: 0.95em;
+      color: #ab75b6;
+      margin-bottom: 10px;
+    }
+    aside {
+      background: #e2bfe2;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px #ab75b644;
+      padding: 18px 22px;
+      color: #6d1f85;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <section id="pembungkus">
+    <header>
+      <p>Tangerang, 17 Oktober 2023</p>
+      <h1>Blog Mawan Agus Nugroho</h1>
+      <p>Mencerahkan Dunia</p>
+      <nav>
+        <ul>
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+    <section class="artikel">
+      <article>
+        <h2>Cara Berternak Ayam</h2>
+        <div class="info">
+          <span class="pengarang">Oleh: Alda</span>
+          <span class="tanggal">3 Oktober 2023</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Nunc eget lorem dolor sed viverra. Eu non diam phasellus
+          vestibulum lorem. Viverra suspendisse potenti nullam ac tortor
+          vitae purus faucibus. Elit duis tristique sollicitudin nibh sit
+          amet commodo nulla facilisi. Tristique senectus et netus et
+          malesuada fames ac. Molestie ac feugiat sed lectus vestibulum
+          mattis ullamcorper velit sed. Commodo quis imperdiet massa
+          tincidunt. Sit amet mattis vulputate enim nulla aliquet.
+          Elementum nibh tellus molestie nunc non blandit massa enim.</p>
+      </article>
+      <article>
+        <h2>Budi Daya Bebek</h2>
+        <div class="info">
+          <span class="pengarang">Oleh: Bella</span>
+          <span class="tanggal">2 Oktober 2023</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Nunc eget lorem dolor sed viverra. Eu non diam phasellus
+          vestibulum lorem. Viverra suspendisse potenti nullam ac tortor
+          vitae purus faucibus. Elit duis tristique sollicitudin nibh sit
+          amet commodo nulla facilisi. Tristique senectus et netus et
+          malesuada fames ac. Molestie ac feugiat sed lectus vestibulum
+          mattis ullamcorper velit sed. Commodo quis imperdiet massa
+          tincidunt. Sit amet mattis vulputate enim nulla aliquet.
+          Elementum nibh tellus molestie nunc non blandit massa enim.</p>
+      </article>
+      <article>
+        <h2>Menanam Ceremai</h2>
+        <div class="info">
+          <span class="pengarang">Oleh: Carla</span>
+          <span class="tanggal">1 Oktober 2023</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Nunc eget lorem dolor sed viverra. Eu non diam phasellus
+          vestibulum lorem. Viverra suspendisse potenti nullam ac tortor
+          vitae purus faucibus. Elit duis tristique sollicitudin nibh sit
+          amet commodo nulla facilisi. Tristique senectus et netus et
+          malesuada fames ac. Molestie ac feugiat sed lectus vestibulum
+          mattis ullamcorper velit sed. Commodo quis imperdiet massa
+          tincidunt. Sit amet mattis vulputate enim nulla aliquet.
+          Elementum nibh tellus molestie nunc non blandit massa enim.</p>
+      </article>
+    </section>
+    <aside>
+      <p>Redaksi</p>
+      <p>Jalan Perintis Kemerdekaan 2<br>
+      Kompleks Pendidikan dan Perkantoran Cikokol<br>
+      Kota Tangerang</p>
+      <button>Switch</button>
+    </aside>
+    <footer>
+      &copy; Hak cipta Mawan Agus Nugroho.
+    </footer>
+  </section>
+</body>
+</html>
